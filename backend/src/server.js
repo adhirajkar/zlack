@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    res.send({ message: 'OK, Welcome to Zlack' })
+    res.send({ message: 'Welcome to Zlack' })
 })
 
 
