@@ -8,6 +8,11 @@ app.use(clerkMiddleware())
 app.use(express.json());
 
 
+app.get('/', (req, res) => {
+    res.send({ message: 'OK, Welcome to Zlack' })
+})
+
+
 const startServer = async () => {
     try {
       await connectDB();
